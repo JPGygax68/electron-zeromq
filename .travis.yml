@@ -1,0 +1,44 @@
+sudo: required
+dist: trusty
+
+language: node_js
+
+matrix:
+  include:
+    - os: osx
+    - os: linux
+
+node_js:
+  - 10
+env:
+  - ELECTRON_CACHE=$HOME/.electron
+
+cache:
+  directories:
+    - $HOME/.electron
+    - node_modules
+
+addons:
+  apt:
+    packages:
+      - icnsutils
+      - graphicsmagick
+      - libgnome-keyring-dev
+      - xz-utils
+      - xorriso
+      - xvfb
+before_install:
+  - npm i -g yarn@1
+install:
+  - yarn
+  - export DISPLAY=':99.0'
+  - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+
+before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start &
+  - sleep 3
+script:
+  - yarn dist
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo hdiutil attach ./build-artifacts/ElectronAngularNativeApp.dmg; fi
+  - yarn e2e
