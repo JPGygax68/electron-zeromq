@@ -1,5 +1,5 @@
 {
-  "name": "electron-angular-native",
+  "name": "electron-zeromq-pub",
   "version": "4.0.0",
   "license": "Apache-2.0",
   "author": "Evgeny Barabanov",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/meltedspark/electron-angular-native"
+    "url": "https://github.com/jpgygax68/electron-zeromq-pub"
   },
   "main": "serve/main.electron.js",
   "keywords": [

@@ -1,6 +1,6 @@
 import {Component, Inject} from '@angular/core';
 import {LINK_PROVIDERS, LinkProvider} from './link-provider';
-import { Socket } from 'zeromq';
+import { socket, Socket } from 'zeromq';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,10 @@ import { Socket } from 'zeromq';
 export class AppComponent {
   title = 'Electron Angular Native starter kit';
 
+  socket: Socket;
+
   constructor(@Inject(LINK_PROVIDERS) public linkProviders: LinkProvider[]) {
-    console.log(Socket);
+
+    this.socket = socket('push');
   }
 }
