@@ -1,8 +1,8 @@
 {
   "name": "electron-zeromq-pub",
-  "version": "4.0.0",
-  "license": "Apache-2.0",
-  "author": "Evgeny Barabanov",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Jean-Pierre Gygax",
   "engines": {
     "node": ">=10"
   },
@@ -16,8 +16,8 @@
     "native",
     "angular",
     "typescript",
-    "boilerplate",
     "node",
+    "zeromq",
     "addon"
   ],
   "scripts": {
