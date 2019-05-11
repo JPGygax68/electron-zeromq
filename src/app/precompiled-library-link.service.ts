@@ -6,7 +6,7 @@ import * as path from 'path';
 @Injectable()
 export class PrecompiledLibraryLinkService implements LinkProvider {
 
-  lib;
+  lib: Library;
 
   constructor() {
     this.lib = new Library(path.resolve(__dirname, 'native-artifacts/precompiled-libraries/simplelib'), {'getLink': [types.CString, []]});
@@ -17,6 +17,6 @@ export class PrecompiledLibraryLinkService implements LinkProvider {
   }
 
   getLink(): string {
-    return this.lib.getLink();
+    return (this.lib as any).getLink();
   }
 }

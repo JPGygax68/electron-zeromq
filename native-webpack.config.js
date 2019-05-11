@@ -26,7 +26,8 @@ module.exports = {
     url: "require('url')",
     util: "require('util')",
     zlib: "require('zlib')",
-    'ffi-napi': "require('ffi-napi')"
+    'ffi-napi': "require('ffi-napi')",
+    zeromq: "require('zeromq')"
   },
   module: {
     rules: [

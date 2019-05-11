@@ -4,7 +4,7 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {LINK_PROVIDERS} from './link-provider';
-import {PrecompiledLibraryLinkService} from './precompiled-library-link.service';
+// import {PrecompiledLibraryLinkService} from './precompiled-library-link.service';
 import {NgxElectronModule} from 'ngx-electron';
 import {NodeAddonLinkService} from './node-addon-link.service';
 
@@ -23,11 +23,11 @@ import {NodeAddonLinkService} from './node-addon-link.service';
       useClass: NodeAddonLinkService,
       multi: true
     },
-    {
+    /* {
       provide: LINK_PROVIDERS,
       useClass: PrecompiledLibraryLinkService,
       multi: true
-    }
+    } */
   ],
   bootstrap: [AppComponent]
 })

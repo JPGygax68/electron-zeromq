@@ -56,11 +56,13 @@
     "@angular/platform-browser": "^7.2.0",
     "@angular/platform-browser-dynamic": "^7.2.0",
     "@angular/router": "^7.2.0",
+    "@types/zeromq": "^4.6.2",
     "core-js": "^2.6.1",
     "electron": "^4.0.1",
     "ffi-napi": "^2.4.4",
     "ngx-electron": "^2.0.0",
     "rxjs": "^6.3.3",
+    "zeromq": "^5.1.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
