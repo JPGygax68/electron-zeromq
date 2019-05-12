@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "electron-angular-native": {
+    "publisher": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -126,7 +126,7 @@
       }
     }
   },
-  "defaultProject": "electron-angular-native",
+  "defaultProject": "publisher",
   "cli": {
     "packageManager": "yarn"
   }
