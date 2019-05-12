@@ -1,0 +1,4 @@
+{
+  "name": "electron-zeromq-pub",
+  "main": "../../serve-pub/main.electron.js"
+}

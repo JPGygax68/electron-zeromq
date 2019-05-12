@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 
 import {AppComponent} from './app.component';
-import {LINK_PROVIDERS} from './link-provider';
+// import {LINK_PROVIDERS} from './link-provider';
 // import {PrecompiledLibraryLinkService} from './precompiled-library-link.service';
 import {NgxElectronModule} from 'ngx-electron';
 // import {NodeAddonLinkService} from './node-addon-link.service';
