@@ -1,5 +1,5 @@
 {
-  "name": "ElectronAngularNativeApp",
+  "name": "Electron ZeroMQ Publisher",
   "version": "1.0.0",
   "main": "main.electron.js",
   "dependencies": {

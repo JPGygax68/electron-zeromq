@@ -6,7 +6,7 @@ import {AppComponent} from './app.component';
 import {LINK_PROVIDERS} from './link-provider';
 // import {PrecompiledLibraryLinkService} from './precompiled-library-link.service';
 import {NgxElectronModule} from 'ngx-electron';
-import {NodeAddonLinkService} from './node-addon-link.service';
+// import {NodeAddonLinkService} from './node-addon-link.service';
 
 
 @NgModule({
@@ -18,11 +18,11 @@ import {NodeAddonLinkService} from './node-addon-link.service';
     NgxElectronModule
   ],
   providers: [
-    {
+    /* {
       provide: LINK_PROVIDERS,
       useClass: NodeAddonLinkService,
       multi: true
-    },
+    }, */
     /* {
       provide: LINK_PROVIDERS,
       useClass: PrecompiledLibraryLinkService,

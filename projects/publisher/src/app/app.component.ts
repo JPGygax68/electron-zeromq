@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { LINK_PROVIDERS, LinkProvider } from './link-provider';
+// import { LINK_PROVIDERS, LinkProvider } from './link-provider';
 import { socket, Socket } from 'zeromq';
 
 @Component({
@@ -12,7 +12,7 @@ export class AppComponent {
 
   socket: Socket;
 
-  constructor(@Inject(LINK_PROVIDERS) public linkProviders: LinkProvider[]) {
+  constructor(/* @Inject(LINK_PROVIDERS) public linkProviders: LinkProvider[] */) {
 
     this.socket = socket('pub');
     this.socket.bind('tcp://127.0.0.1:3000', error => {
