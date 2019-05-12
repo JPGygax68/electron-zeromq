@@ -1,0 +1,4 @@
+{
+  "name": "electron-zeromq-sub",
+  "main": "../../serve-sub/main.electron.js"
+}

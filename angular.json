@@ -133,8 +133,11 @@
       "schematics": {},
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "customWebpackConfig": {
+              "path": "./native-webpack.config.js"
+            },
             "outputPath": "dist/subscriber",
             "index": "projects/subscriber/src/index.html",
             "main": "projects/subscriber/src/main.ts",
